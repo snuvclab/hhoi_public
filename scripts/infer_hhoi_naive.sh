@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=7 python runners/inference_hhoi_naive.py \
+--log_dir HHOI_bench_naive \
+--hoi_score_model_path results/ckpts/HOI_bench/ckpt_epoch20000.pth \
+--hhi_score_model_path results/ckpts/HHI_bench/ckpt_epoch20000.pth \
+--input_h1o_text_prompt "One person is sitting on a bench." \
+--input_h1h2_text_prompt "Two people sit on a bench." \
+--sampler_mode ode_hhoi_naive \
+--batch_size 256 \
+--seed 0 \
+--human_pose_dim 10 \
+--model_type hhoi

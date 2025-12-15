@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=1 python runners/trainer_R_t_s.py \
+--data_path data/hhi \
+--log_dir HHI \
+--agent_type score \
+--sampler_mode ode \
+--sampling_steps 500 \
+--eval_freq 2000 \
+--n_epochs 20000 \
+--batch_size 500 \
+--seed 0 \
+--is_train \
+--lr 1e-2 \
+--lr_decay 0.999 \
+--human_pose_dim 10 \
+--model_type hhi

@@ -1,0 +1,16 @@
+CUDA_VISIBLE_DEVICES=7 python runners/inference_hhoi.py \
+--log_dir HHOI \
+--hoi_score_model_path results/ckpts/HOI/ckpt_epoch20000.pth \
+--hhi_score_model_path results/ckpts/HHI/ckpt_epoch20000.pth \
+--input_pickle_path "data/pickle/bench_2_people.pkl" \
+--sampler_mode ode_hhoi \
+--batch_size 256 \
+--seed 0 \
+--human_pose_dim 10 \
+--model_type hhoi \
+--use_inconsistency_loss \
+--use_collision_loss \
+--time_thres 0.5 \
+--solver_type gpu \
+--additional_loss_step 2 \
+--sampling_steps_for_gpu_solver 2
