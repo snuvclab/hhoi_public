@@ -1,4 +1,4 @@
-# Learning to Generate Human-Human-Object Interactions from Textual Descriptions
+# [NeurIPS 2025] Learning to Generate Human-Human-Object Interactions from Textual Descriptions
 
 ## [Project Page](https://tlb-miss.github.io/hhoi/) &nbsp;|&nbsp; [Paper](https://arxiv.org/pdf/2511.20446) 
 
