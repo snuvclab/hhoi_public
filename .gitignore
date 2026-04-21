@@ -6,5 +6,4 @@ optimize_capsule_radius.py
 pytorch3d/
 results/
 smplx/
-train_human_pose_enc_dec.py
 wandb/
